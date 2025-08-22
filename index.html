@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Memory Card Game</h1>
+
+  <!-- Fixed Stats -->
+  <div id="game-stats">
+    <div id="moves">Moves: 0</div>
+    <div id="timer">Time: 0s</div>
+  </div>
+
+  <!-- Difficulty Buttons -->
+  <div id="difficulty">
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+
+  <!-- Theme Toggle -->
+  <div id="theme-toggle">
+    <button id="themeBtn" aria-label="Toggle theme">☀️ Light</button>
+  </div>
+
+  <!-- Game Board -->
+  <div id="game-board" class="game-board"></div>
+
+  <!-- Win Overlay -->
+  <div id="win-message">
+    <div class="win-content">
+      🎉 You Win! 🎉
+      <br><br>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
